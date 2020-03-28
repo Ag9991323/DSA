@@ -60,8 +60,8 @@ class RobinKarp{
          
           if(p==t){
               boolean ans=true;
-             x: for(int j=0;j<83;j++){
-                 System.out.println(str.charAt(j)+"   "+i);
+             x: for(int j=0;j<len_t;j++){
+                
                   if(str.charAt(j+i)!=target.charAt(j)){
                       if(i==2){
                         
@@ -76,7 +76,7 @@ class RobinKarp{
               }
           }
           if(i<(len_str-len_t)){
-             
+              System.out.println(p+"   "+t);
               t=(d*(t-str.charAt(i)*h)+str.charAt(i+len_t))%q;
               if(t<0){
                   t=t+q;
