@@ -15,7 +15,7 @@ class ReverseWordsInAString{
             }
             for(int i=0;i<pat.length();i++){
                 if(map.containsKey(pat.charAt(i))){
-                    return pat.charAt(i);
+                    System.out.println(pat.charAt(i));
                 }
             }
            
