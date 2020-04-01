@@ -79,22 +79,43 @@ class List{
        }
 
        void NthNodeFromLinkList(int n){
-           int sizel=0;
-           Node curr =head;
-           while(curr!=null){
-               curr=curr.Next;
-               sizel++;
-           }
-           
-           sizel-=(n);
-           if(sizel<0){
+           if(head==null){
                return;
            }
-           curr=head;
-           for(int i=0;i<sizel;i++){
-                curr=curr.Next;
-           }
-           System.out.println(curr.data);
+          Node first=head;
+          Node second=head;
+          for(int i=0;i<n;i++){
+              if(first==null){
+                  return;
+              }
+            first=first.Next;
+          }
+          while(first!=null){
+              second=second.Next;
+              first =first.Next;
+          }
+          System.out.println(second.data);
+       }
+
+       void ReverseList(){
+          if(head==null||head.Next==null){
+              return;
+          }
+          Node curr=head;
+          Node prev=null;
+          Node next=null;
+          while(curr!=null){
+              next=curr.Next;
+              curr.Next=prev;
+              prev=curr;
+              curr=next;
+             }
+             head=prev;
+             
+
+          
+         
+
        }
 }
 class Test{
@@ -114,8 +135,9 @@ class Test{
         l.insertAtLast(80);
    
         l.printList();
-        l.printmiddle(l.head);
-        l.NthNodeFromLinkList(6);
+        l.ReverseList();
+        l.printList();
+       
        
         
     }
