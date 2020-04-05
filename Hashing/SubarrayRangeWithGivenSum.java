@@ -25,13 +25,16 @@ class Subarraywithgivensum{
             for(int i=0;i<N;i++){
                 max+=arr1[i];
                 if(max==sum){
+                    System.out.println(i+" hello");
                     count++;
                    
                   
                 }
                 
                 if(hashset.containsKey(max-sum)){
+                   
                    count+=hashset.get(max-sum);
+                   
                   
                 }
                 if(hashset.containsKey(max)){
@@ -43,6 +46,7 @@ class Subarraywithgivensum{
                
                 
             }
+            System.out.println(hashset);
           
             System.out.println(count);
             
