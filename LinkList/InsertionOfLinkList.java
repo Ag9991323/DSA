@@ -65,16 +65,21 @@ class Main{
     public static void main(String[] args) {
         Insertion i = new Insertion();
         reverseingroups r = new reverseingroups();
-        i.insertatEnd(80);
-        i.insertatEnd(70);
-        i.insertatEnd(60);
-        i.insertatEnd(50);
-       
+        RemoveduplicateNode rd= new RemoveduplicateNode();
+        //i.insertatEnd(10);
+        i.insertatEnd(20);
+        i.insertatEnd(20);
+        // i.insertatEnd(20);
+        // i.insertatEnd(30);
+        // i.insertatEnd(30);
        // i.insertatEnd(40);
         i.printLinkList();
-       i.insertAtMiddle(5);
+    //    i.insertAtMiddle(5);
        i.printLinkList();
-       i.head=r.reverse(i.head,3);
+       rd.removeDuplicates(i.head);
+    //    i.head=r.reverse(i.head,3);
+
        i.printLinkList();
+   
     }
 }
