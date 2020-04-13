@@ -3,6 +3,7 @@ package LinkList;
 class Node{
     int data;
     Node Next;
+    Node(){};
     Node(int d){
         data=d;
     }

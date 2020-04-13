@@ -66,20 +66,26 @@ class Main{
         Insertion i = new Insertion();
         reverseingroups r = new reverseingroups();
         RemoveduplicateNode rd= new RemoveduplicateNode();
-        //i.insertatEnd(10);
-        i.insertatEnd(20);
-        i.insertatEnd(20);
-        // i.insertatEnd(20);
-        // i.insertatEnd(30);
-        // i.insertatEnd(30);
-       // i.insertatEnd(40);
+        SeggregatEvenOdd sg = new SeggregatEvenOdd();
+        PairWiseSwapping pg = new PairWiseSwapping();
+        RotateLinkList rt = new RotateLinkList();
+        i.insertatEnd(2);
+        i.insertatEnd(4);
+       // i.insertatEnd(20);
+        i.insertatEnd(7);
+        i.insertatEnd(8);
+        i.insertatEnd(9);
+       //i.insertatEnd(40);
         i.printLinkList();
-    //    i.insertAtMiddle(5);
+    
+       //rd.removeDuplicates(i.head);
+       i.head=rt.rotate(i.head,3 );
        i.printLinkList();
-       rd.removeDuplicates(i.head);
+       //pg.swapping(i.head);
+
     //    i.head=r.reverse(i.head,3);
 
-       i.printLinkList();
+     //  i.printLinkList();
    
     }
 }
