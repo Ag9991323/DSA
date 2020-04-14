@@ -64,22 +64,30 @@ class Insertion{
 class Main{
     public static void main(String[] args) {
         Insertion i = new Insertion();
+        Insertion q = new Insertion();
         reverseingroups r = new reverseingroups();
         RemoveduplicateNode rd= new RemoveduplicateNode();
         SeggregatEvenOdd sg = new SeggregatEvenOdd();
         PairWiseSwapping pg = new PairWiseSwapping();
         RotateLinkList rt = new RotateLinkList();
+        MergeTwoSortedLL mt = new MergeTwoSortedLL();
+        q.insertatEnd(5);
+        q.insertatEnd(10);
         i.insertatEnd(2);
-        i.insertatEnd(4);
-       // i.insertatEnd(20);
-        i.insertatEnd(7);
-        i.insertatEnd(8);
-        i.insertatEnd(9);
+        i.insertatEnd(3);
+        q.insertatEnd(15);
+        q.insertatEnd(40);
+        i.insertatEnd(20);
+       // i.insertatEnd(8);
+        //i.insertatEnd(9);
        //i.insertatEnd(40);
+        //i.printLinkList();
+        q.printLinkList();
         i.printLinkList();
+        i.head=mt.Marge(i.head, q.head);
     
        //rd.removeDuplicates(i.head);
-       i.head=rt.rotate(i.head,3 );
+      // i.head=pg.swapping(i.head );
        i.printLinkList();
        //pg.swapping(i.head);
 
