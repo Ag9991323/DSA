@@ -74,13 +74,16 @@ class Main{
         AdditionOfTwoLL at= new AdditionOfTwoLL();
         Palindrome pl = new Palindrome();
         removeduplicate rd = new removeduplicate();
-        q.insertatEnd(5);
-        q.insertatEnd(3);
+        SwapNthNode  sd= new SwapNthNode();
+        q.insertatEnd(610);
+        q.insertatEnd(484);
        // q.insertatEnd(4);
-        q.insertatEnd(7);
-        q.insertatEnd(10);
+        q.insertatEnd(829);
+        q.insertatEnd(927);
+        q.insertatEnd(868);
+        q.insertatEnd(63);
        // i.insertatEnd(4);
-        //q.insertatEnd(2);
+        //q.insertatEnd(2);610 484 829 927 868 63
         //q.insertatEnd(4);
        // i.insertatEnd(5);
        // i.insertatEnd(8);
@@ -89,12 +92,12 @@ class Main{
         //i.printLinkList();
         q.printLinkList();
        // i.printLinkList();
-        i.head=rd.duplicate( q.head);
+        q.head=sd.swap(q.head,3,6);
       // System.out.println(pl.palin(q.head));
     
        //rd.removeDuplicates(i.head);
       // i.head=pg.swapping(i.head );
-       i.printLinkList();
+       q.printLinkList();
        //pg.swapping(i.head);
 
     //    i.head=r.reverse(i.head,3);
