@@ -1,6 +1,7 @@
 package LinkList;
 import java.util.*;
 
+
 class Insertion{
     Node head;
 
@@ -75,13 +76,14 @@ class Main{
         Palindrome pl = new Palindrome();
         removeduplicate rd = new removeduplicate();
         SwapNthNode  sd= new SwapNthNode();
-        q.insertatEnd(610);
-        q.insertatEnd(484);
+        LinkListOf012 ll = new LinkListOf012();
+        q.insertatEnd(0);
+       q.insertatEnd(1);
        // q.insertatEnd(4);
-        q.insertatEnd(829);
-        q.insertatEnd(927);
-        q.insertatEnd(868);
-        q.insertatEnd(63);
+        q.insertatEnd(2);
+        q.insertatEnd(1);
+        q.insertatEnd(2);
+     //   q.insertatEnd(0);
        // i.insertatEnd(4);
         //q.insertatEnd(2);610 484 829 927 868 63
         //q.insertatEnd(4);
@@ -92,7 +94,7 @@ class Main{
         //i.printLinkList();
         q.printLinkList();
        // i.printLinkList();
-        q.head=sd.swap(q.head,3,6);
+        q.head=ll.List012(q.head);
       // System.out.println(pl.palin(q.head));
     
        //rd.removeDuplicates(i.head);

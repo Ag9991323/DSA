@@ -1,6 +1,6 @@
 package LinkList;
 
-class Node{
+ class Node{
     int data;
     Node Next;
     Node(){};
