@@ -66,18 +66,19 @@ class Main{
         Insertion i = new Insertion();
         Insertion q = new Insertion();
         reverseingroups r = new reverseingroups();
-        RemoveduplicateNode rd= new RemoveduplicateNode();
+        RemoveduplicateNode rt= new RemoveduplicateNode();
         SeggregatEvenOdd sg = new SeggregatEvenOdd();
         PairWiseSwapping pg = new PairWiseSwapping();
-        RotateLinkList rt = new RotateLinkList();
+        RotateLinkList rs = new RotateLinkList();
         MergeTwoSortedLL mt = new MergeTwoSortedLL();
         AdditionOfTwoLL at= new AdditionOfTwoLL();
         Palindrome pl = new Palindrome();
+        removeduplicate rd = new removeduplicate();
         q.insertatEnd(5);
         q.insertatEnd(3);
        // q.insertatEnd(4);
         q.insertatEnd(7);
-        q.insertatEnd(5);
+        q.insertatEnd(10);
        // i.insertatEnd(4);
         //q.insertatEnd(2);
         //q.insertatEnd(4);
@@ -88,8 +89,8 @@ class Main{
         //i.printLinkList();
         q.printLinkList();
        // i.printLinkList();
-     //   i.head=at.Addition(i.head, q.head);
-       System.out.println(pl.palin(q.head));
+        i.head=rd.duplicate( q.head);
+      // System.out.println(pl.palin(q.head));
     
        //rd.removeDuplicates(i.head);
       // i.head=pg.swapping(i.head );
