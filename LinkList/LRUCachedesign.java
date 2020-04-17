@@ -25,6 +25,7 @@ class Linklist{
           
            return;
         }
+       
         head.prev=n;
         n.next= head;
         head = n;

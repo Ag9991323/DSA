@@ -122,6 +122,8 @@ class List{
 class Test{
     public static void main(String[] args){
         List l = new List();
+        var ashu ="ashu";
+        System.out.println(ashu);
        
        l.insertAtLast(35);
    

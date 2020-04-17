@@ -9,6 +9,7 @@ class Anagram{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t =Integer.parseInt(br.readLine());
         while(t-- >0){
+           
             String s=br.readLine();
             String p =br.readLine();
             int count[]= new int[26];
