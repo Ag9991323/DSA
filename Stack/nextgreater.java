@@ -11,8 +11,17 @@ class  Main{
           for(int i=0;i<N;i++)
                arr[i]= scan.nextInt();
             Stack<Integer> st = new Stack<Integer>();
-            for(int i=0;i<N;i++){
-                
+           // st.push(arr[N-1]);
+            for(int i=N-1;i>=0;i--){
+                while(!st.isEmpty()&&st.peek()<=arr[i]){
+                    st.pop();
+                }
+                int val =st.isEmpty()?-1:st.peek();
+                System.out.println(val);
+                st.push(arr[i]);
+
+
+
             }
 
           }
