@@ -11,6 +11,7 @@ class Node{
      }
 }
 class LinkList{
+    //hello world
     Node head;
     void insertAtEND(int x){
         Node temp = new Node(x);
