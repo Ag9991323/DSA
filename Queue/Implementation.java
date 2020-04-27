@@ -1,12 +1,12 @@
 package Queue;
 import java.util.*;
-class Queue{
+class Queu{
     int front=0;
     int rear =0;
     int size=0;
     int cap =0;
     int arr[];
-        Queue(int c){
+        Queu(int c){
             cap=c;
             arr = new int[cap];
             
@@ -25,11 +25,11 @@ class Queue{
         }
 }
 
-class  Main{
+class  implementation{
       public static void main(String[] args) {
           Scanner scan = new Scanner(System.in);
         
-          Queue q = new Queue(4);
+          Queu q = new Queu(4);
           q.enqueue(25);
           System.out.println(Arrays.toString(q.arr));
           q.enqueue(5);
