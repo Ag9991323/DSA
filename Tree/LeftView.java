@@ -7,5 +7,5 @@ class LeftView
       System.out.print(root.data+" ");
       if(root.left!=null) leftView(root.left);
       else leftView(root.right);
-    }
+    
 }
