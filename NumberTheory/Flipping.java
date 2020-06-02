@@ -7,7 +7,7 @@ class  Flip{
           int t = scan.nextInt();
           while(t-- >0){
           int N= scan.nextInt();
-          int arr[] =  new int[N];
+          int arr[] =  new int[N];      332 
           int sum=0;
           for(int i=0;i<N;i++){
             arr[i]= scan.nextInt();
